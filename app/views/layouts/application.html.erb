@@ -2,10 +2,9 @@
 <html>
   <head>
     <title><%= full_title(yield(:title)) %></title>
-    <%= csrf_meta_tags %>
-
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= csrf_meta_tags %>
     <%= render 'layouts/shim' %>
   </head>
 
@@ -13,7 +12,7 @@
     <%= render 'layouts/header' %>
     <div class="container">
       <%= yield %>
-      <%= render 'layouts/footer' %>      
+      <%= render 'layouts/footer' %>
     </div>
   </body>
 </html>
